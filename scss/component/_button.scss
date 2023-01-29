@@ -1,0 +1,24 @@
+.btn{
+    background-color: $violet-primary;
+    color: $white;
+    padding: 20px 25px;
+    display: inline-block;
+    cursor: pointer;
+    border: 2px solid transparent;
+    text-align: center;
+    font-size: $font-size-15;
+    font-weight: $font-weight-bold;
+    border-radius: $border-radius;
+    margin: 5px 0; //5px bottom top, 0 left right
+    transition: background-color .2 ease-in-out, border .2 ease-in-out, color .2 ease-in-out;
+
+    &:hover{
+        color: $violet-primary;
+        background-color: $white;
+        border-color: $violet-primary;
+    }
+
+    &--small{
+        padding: 12px 25px;
+    }
+}
