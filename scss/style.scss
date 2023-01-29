@@ -1,10 +1,6 @@
-$background: #333;
-$colour: #0f0;
-
-body{
-    background-color: $background;
-}
-
-h1{
-    color: $colour;
-}
+@use 'base/variables';
+@use 'base/colours';
+@use 'base/mixins';
+@use 'base/utils';
+@use 'base/reset';
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');

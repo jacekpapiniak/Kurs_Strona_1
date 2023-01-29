@@ -1,0 +1,23 @@
+//Mixins - bits of code that repeat themselfs often
+
+//Media query mixin
+//All devices from small screen and above
+@mixin small-up{
+  @media (min-width: #{$breakpoint-small}) {
+    @content
+  }
+}; 
+
+//All devices from medium screen and above
+@mixin medium-up{
+  @media (min-width: #{$breakpoint-medium}) {
+    @content
+  }
+}; 
+
+//All devices from large screen and above
+@mixin large-up{
+  @media (min-width: #{$breakpoint-large}) {
+    @content
+  }
+}; 

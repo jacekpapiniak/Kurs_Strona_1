@@ -1,0 +1,287 @@
+
+//Utils for Flex
+.u-display-flex{
+    display: flex;
+}
+
+.u-justify-center{
+    justify-content: center;
+}
+
+.u-justify-start{
+    justify-content: flex-start;
+}
+
+.u-justify-end{
+    justify-content: flex-end;
+}
+
+.u-justify-between{
+    justify-content: space-between;
+}
+
+//align
+.u-align-start{
+    align-content: flex-start;
+}
+
+.u-align-end{
+    align-content: flex-end;
+}
+
+.u-align-center{
+    align-content: center;
+}
+
+//Text
+.u-text-center{
+    text-align: center;
+}
+
+.u-font-bold{
+    font-weight: $font-weight-light;
+}
+
+.u-cursor-pointer{
+    cursor: pointer;
+}
+
+//Spacing
+.u-margin-auto{
+    margin: 0 auto;
+}
+
+.u-margin-top-5{
+    margin-top: $grid-base * .5;
+}
+
+.u-margin-top-10{
+    margin-top: $grid-base;
+}
+
+.u-margin-top-15{
+    margin-top: $grid-base * 1.5;
+}
+
+.u-margin-top-20{
+    margin-top: $grid-base * 2;
+}
+
+.u-margin-top-30{
+    margin-top: $grid-base * 3;
+}
+
+.u-margin-top-40{
+    margin-top: $grid-base * 4;
+}
+
+.u-margin-top-50{
+    margin-top: $grid-base * 5;
+}
+
+//margin bottom
+.u-margin-bottom-5{
+    margin-bottom: $grid-base * .5;
+}
+
+.u-margin-bottom-10{
+    margin-bottom: $grid-base;
+}
+
+.u-margin-bottom-15{
+    margin-bottom: $grid-base * 1.5;
+}
+
+.u-margin-bottom-20{
+    margin-bottom: $grid-base * 2;
+}
+
+.u-margin-bottom-30{
+    margin-bottom: $grid-base * 3;
+}
+
+.u-margin-bottom-40{
+    margin-bottom: $grid-base * 4;
+}
+
+.u-margin-bottom-50{
+    margin-bottom: $grid-base * 5;
+}
+
+//margin right
+.u-margin-right-5{
+    margin-right: $grid-base * .5;
+}
+
+.u-margin-right-10{
+    margin-right: $grid-base;
+}
+
+.u-margin-right-15{
+    margin-right: $grid-base * 1.5;
+}
+
+.u-margin-right-20{
+    margin-right: $grid-base * 2;
+}
+
+.u-margin-right-30{
+    margin-right: $grid-base * 3;
+}
+
+.u-margin-right-40{
+    margin-right: $grid-base * 4;
+}
+
+.u-margin-right-50{
+    margin-right: $grid-base * 5;
+}
+
+//margin left
+.u-margin-left-5{
+    margin-left: $grid-base * .5;
+}
+
+.u-margin-left-10{
+    margin-left: $grid-base;
+}
+
+.u-margin-left-15{
+    margin-left: $grid-base * 1.5;
+}
+
+.u-margin-left-20{
+    margin-left: $grid-base * 2;
+}
+
+.u-margin-left-30{
+    margin-left: $grid-base * 3;
+}
+
+.u-margin-left-40{
+    margin-left: $grid-base * 4;
+}
+
+.u-margin-left-50{
+    margin-left: $grid-base * 5;
+}
+
+//Padding
+.u-padding-auto{
+    padding: 0 auto;
+}
+
+.u-padding-top-5{
+    padding-top: $grid-base * .5;
+}
+
+.u-padding-top-10{
+    padding-top: $grid-base;
+}
+
+.u-padding-top-15{
+    padding-top: $grid-base * 1.5;
+}
+
+.u-padding-top-20{
+    padding-top: $grid-base * 2;
+}
+
+.u-padding-top-30{
+    padding-top: $grid-base * 3;
+}
+
+.u-padding-top-40{
+    padding-top: $grid-base * 4;
+}
+
+.u-padding-top-50{
+    padding-top: $grid-base * 5;
+}
+
+//padding bottom
+.u-padding-bottom-5{
+    padding-bottom: $grid-base * .5;
+}
+
+.u-padding-bottom-10{
+    padding-bottom: $grid-base;
+}
+
+.u-padding-bottom-15{
+    padding-bottom: $grid-base * 1.5;
+}
+
+.u-padding-bottom-20{
+    padding-bottom: $grid-base * 2;
+}
+
+.u-padding-bottom-30{
+    padding-bottom: $grid-base * 3;
+}
+
+.u-padding-bottom-40{
+    padding-bottom: $grid-base * 4;
+}
+
+.u-padding-bottom-50{
+    padding-bottom: $grid-base * 5;
+}
+
+//padding right
+.u-padding-right-5{
+    padding-right: $grid-base * .5;
+}
+
+.u-padding-right-10{
+    padding-right: $grid-base;
+}
+
+.u-padding-right-15{
+    padding-right: $grid-base * 1.5;
+}
+
+.u-padding-right-20{
+    padding-right: $grid-base * 2;
+}
+
+.u-padding-right-30{
+    padding-right: $grid-base * 3;
+}
+
+.u-padding-right-40{
+    padding-right: $grid-base * 4;
+}
+
+.u-padding-right-50{
+    padding-right: $grid-base * 5;
+}
+
+//padding left
+.u-padding-left-5{
+    padding-left: $grid-base * .5;
+}
+
+.u-padding-left-10{
+    padding-left: $grid-base;
+}
+
+.u-padding-left-15{
+    padding-left: $grid-base * 1.5;
+}
+
+.u-padding-left-20{
+    padding-left: $grid-base * 2;
+}
+
+.u-padding-left-30{
+    padding-left: $grid-base * 3;
+}
+
+.u-padding-left-40{
+    padding-left: $grid-base * 4;
+}
+
+.u-padding-left-50{
+    padding-left: $grid-base * 5;
+}
