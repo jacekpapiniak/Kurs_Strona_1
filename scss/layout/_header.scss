@@ -1,0 +1,20 @@
+.header{
+    padding-top: 25px;
+    position: relative;
+
+    @include medium-up{
+        padding-top: 60px;
+    }
+
+    & .flex{
+        justify-content: space-between;
+    }
+
+    &__btn{
+        display: none;
+
+        @include medium-up{
+            display: block;
+        }
+    }
+}

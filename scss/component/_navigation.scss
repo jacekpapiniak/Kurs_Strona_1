@@ -1,0 +1,30 @@
+.navigation{
+    &--desktop{
+        display: none;
+
+        @include medium-up{
+            display: block;
+
+            & ul{
+                display: flex;
+            }
+
+            & a{
+               padding: 10px;
+               margin: 0 30px;
+               color: $gray-dark;
+               line-height: $line-height-base;
+               font-weight: $font-weight-semibold;
+               transition: color .1s linear;
+               
+               &:hover{
+                color: $violet-primary;
+               }
+
+               &.active{
+                color: $violet-primary;
+               }
+            }
+        }
+    }
+}
