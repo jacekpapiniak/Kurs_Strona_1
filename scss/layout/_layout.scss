@@ -1,0 +1,92 @@
+.container{
+    max-width: 1054px; // 1440-196*2
+    margin: 0 auto;
+    padding: 0 $grid-base * 1.5;//15px
+    overflow: visible;
+
+    &--full{ //modyfikator full screen
+        max-width: 1440px;
+    }
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    &--3{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    &--4{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.col{
+    width: 100%;
+    padding: $grid-base * 1.5;
+    display: inline-block;
+
+    //Column for breakpoint medium up
+    &--medium25{
+        @include medium-up{
+            flex: 0 0 25%;
+            max-width: 25%;
+        }
+    }
+
+    &--medium33{
+        @include medium-up{
+            flex: 0 0 33.3%;
+            max-width: 33.3%;
+        }
+    }
+
+    &--medium50{
+        @include medium-up{
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+
+    //Column for breakpoint large up
+    &--large25{
+        @include large-up{
+            flex: 0 0 25%;
+            max-width: 25%;
+        }
+    }
+
+    &--large33{
+        @include large-up{
+            flex: 0 0 33.3%;
+            max-width: 33.3%;
+        }
+    }
+
+    &--large50{
+        @include large-up{
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+
+    &--hidden-small{
+        display: none;
+
+        @include small-up {
+            display: inline-block;
+        }
+    }
+}

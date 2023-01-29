@@ -1,6 +1,9 @@
-@use 'base/variables';
-@use 'base/colours';
-@use 'base/mixins';
-@use 'base/utils';
-@use 'base/reset';
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+@import 'base/variables';
+@import 'base/colours';
+@import 'base/mixins';
+@import 'base/utils';
+@import 'base/reset';
+
+@import 'layout/layout';
