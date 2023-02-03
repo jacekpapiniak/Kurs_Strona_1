@@ -28,10 +28,7 @@
         }
 
         & p{
-            color: $gray-primary;
-            margin-bottom: 44px;
-            font-size: $font-size-24;
-            line-height: $line-height-medium;
+            @include paragraph;
 
             @include medium-up{
                 margin-bottom: 57px;
@@ -108,10 +105,8 @@
         }
     
         & p{
-            color: $gray-secondary;
             margin-top: 34px;
-            font-size: $font-size-24;
-            line-height: $line-height-medium;
+            @include paragraph;
         }
     }
 
@@ -139,6 +134,56 @@
 
         @include medium-up{
             grid-template-columns: 45% 55%;
+        }
+    }
+}
+
+.ar{
+    & .grid{
+        grid-template-columns: 1fr;
+
+        @include medium-up{
+            grid-template-columns: 50% 50%;
+            position: relative;
+            background: $gradient;
+            border-radius: 50px;
+            padding: 134px 55px;
+        }
+    }
+
+    & p{
+        @include paragraph;
+    }
+
+    &__text{
+        text-align: center;
+
+        @include medium-up{
+            text-align: left;
+            margin-left: 60px;
+        }
+    }
+
+    &__img{
+        &--mobile{
+            display: inline-block;
+            justify-self: center;
+
+            @include medium-up{
+                display: none;
+            }
+        }
+
+        &--desktop{
+            display: none;
+
+            @include medium-up{
+                display: inline-block;
+                position: absolute;
+                right: 0;
+                top: -100px;
+                width: 45%;
+            }
         }
     }
 }
