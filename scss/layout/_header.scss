@@ -11,10 +11,12 @@
     }
 
     &__btn{
-        display: none;
+        &.btn{
+            display: none;
 
-        @include medium-up{
-            display: block;
+            @include medium-up{
+                display: block;
+            }
         }
     }
 }

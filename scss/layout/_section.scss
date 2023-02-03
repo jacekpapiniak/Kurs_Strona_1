@@ -1,3 +1,11 @@
+.section{
+    padding: 65px 0 0;
+
+    @include medium-up{
+        padding: 150px 0 0;
+    }
+}
+
 .showcase{
     overflow: hidden;
 
@@ -19,7 +27,7 @@
             }
         }
 
-        p{
+        & p{
             color: $gray-primary;
             margin-bottom: 44px;
             font-size: $font-size-24;
@@ -38,12 +46,20 @@
         &--desktop{
             display: none;
 
+            @include small-up{
+                display: inline-block;
+                position: relative;
+                right: -15px;
+                margin-top: 30px;
+            }
+
             @include medium-up{
                 display: inline-block;
                 position: absolute;
                 top: 0;
                 right: 0;
                 width: 45%;
+                margin-top: unset;
             }
         }
 
@@ -53,19 +69,76 @@
             right: -15px; //to negate 15px margin on mobile devices
             margin-top: 60px;
 
-            @include medium-up{
+            @include small-up{
                 display: none;
             }
         }
     }
 
-    &.flex{
+    & .flex{
         justify-content: flex-start;
         align-items: center;
         flex-direction: column;
 
         @include medium-up{
             flex-direction: row;
+        }
+    }
+}
+
+.application{
+    &__info{
+        font-weight: $font-weight-semibold;
+        font-size: 34px;
+        line-height: 36px;
+        margin-bottom: 75px;
+
+        @include medium-up{
+            font-size: $font-size-44;
+            margin-bottom: 15px;
+        }
+    }
+
+    &__text{
+        text-align: center;
+
+        @include medium-up{
+            text-align: left;
+            margin-left: 60px;
+        }
+    
+        & p{
+            color: $gray-secondary;
+            margin-top: 34px;
+            font-size: $font-size-24;
+            line-height: $line-height-medium;
+        }
+    }
+
+    &__img{
+        &--desktop{
+            display: none;
+
+            @include medium-up{
+                display: inline-block;
+            }
+        }   
+
+        &--mobile{
+            display: inline-block;
+            justify-self: center;
+
+            @include medium-up{
+                display: none;
+            }
+        } 
+    }
+
+    & .grid{
+        grid-template-columns: 1fr;
+
+        @include medium-up{
+            grid-template-columns: 45% 55%;
         }
     }
 }

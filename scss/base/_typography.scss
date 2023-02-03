@@ -35,7 +35,7 @@
 
 .label{
     display: block;
-    margin-bottom: 15px;
+    margin-bottom: 30;
     font-size: $font-size-24;
     color: $violet-primary;
     font-weight: $font-weight-bold;
@@ -44,5 +44,6 @@
 
     @include medium-up{
         text-align: start;
+        margin-bottom: 15px;
     }
 }
