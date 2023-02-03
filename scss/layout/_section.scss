@@ -187,3 +187,35 @@
         }
     }
 }
+
+.socialmedia{
+    img{
+        justify-self: center;
+    }
+
+    &__text{
+        color: $black;
+        font-weight: $font-weight-bold;
+        font-size: 26px;
+        line-height: 36px;
+        text-align: center;
+
+        @include medium-up{
+            font-size: $font-size-32;
+            line-height: 57px;
+            text-align: left;
+        }
+    }
+
+    & .grid{
+        padding-bottom: 50px;
+        grid-template-columns: 1fr;
+        border-bottom: 1px solid $violet-light;
+        margin: 0 15px;
+
+        @include medium-up{
+            grid-template-columns: 45% 55%;
+            margin: 0 auto;
+        }
+    }
+}
