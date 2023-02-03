@@ -22,3 +22,21 @@
         padding: 12px 25px;
     }
 }
+
+.btn-menu{
+    display: inline-block;
+    cursor: pointer;
+    z-index: 10;
+    border: none;
+    background-color: transparent;
+
+    &:hover{
+        svg, path{
+            stroke: $violet-primary;
+        }
+    }
+
+    @include medium-up{
+        display: none;
+    }
+}
