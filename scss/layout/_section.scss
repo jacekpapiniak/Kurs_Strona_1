@@ -28,10 +28,14 @@
         }
 
         & p{
+            margin-bottom: 44px;
+            width: 100%;
+
             @include paragraph;
 
             @include medium-up{
                 margin-bottom: 57px;
+                width: 80%;
             
             }
         }
@@ -101,7 +105,7 @@
 
         @include medium-up{
             text-align: left;
-            margin-left: 60px;
+            margin-left: 50px;
         }
     
         & p{
@@ -151,6 +155,14 @@
         }
     }
 
+    & h2{
+        width: 100%;
+
+        @include medium-up{
+            width: 80%;
+        }
+    }
+
     & p{
         @include paragraph;
     }
@@ -160,7 +172,7 @@
 
         @include medium-up{
             text-align: left;
-            margin-left: 60px;
+            margin-left: 50px;
         }
     }
 

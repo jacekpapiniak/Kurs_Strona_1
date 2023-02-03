@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doya | aplikacja na zakupy</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -115,9 +116,9 @@
                 </div>
 
                 <div class="grid">
-                    <img src="img/application.png" class="application__img--desktop" alt="Przykład widoku aplikacji">
+                    <img src="img/application.png" class="application__img--desktop" alt="Przykład widoku aplikacji" data-aos="fade-right">
 
-                    <div class="application__text">
+                    <div class="application__text" data-aos="fade-left">
                         <span class="label">Utwórz konto</span>
                         <h2 class="heading heading--2">Odkryj oryginalne produkty</h2>
                         <p>Istnieje ponad 950 kategorii aktualizowanych codziennie na podstawie popularnych recenzji witryn i ocen użytkowników.</p>
@@ -145,12 +146,12 @@
         <!-- Section offer -->
         <section class="application section">
             <div class="container grid">
-                    <img src="img/offer.png" class="application__img--desktop" alt="Przykład widoku aplikacji">
+                    <img src="img/offer.png" class="application__img--desktop" alt="Przykład widoku aplikacji" data-aos="fade-right">
 
-                    <div class="application__text">
+                    <div class="application__text" data-aos="fade-left">
                         <span class="label">Oryginalna platforma</span>
                         <h2 class="heading heading--2">Najgorętsze oferty w internecie</h2>
-                        <p>Znajdź idealny prezent lub przedmioty codziennego użytku na wyciągnięcie ręki.</p>
+                        <p>Znajdź idealny prezent lub przedmioty codziennego użytku <br> na wyciągnięcie ręki.</p>
                     </div>
 
                     <img src="img/offer-mobile.png" class="application__img--mobile" alt="Przykład widoku aplikacji">
@@ -185,5 +186,9 @@
     </footer>
 
     <script src="./js/all.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({delay:200, duration: 1200, once: true});
+    </script>
 </body>
 </html>
